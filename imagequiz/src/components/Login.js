@@ -1,11 +1,28 @@
-import {Form, Button} from "react-bootstrap"
+import {Form, Button} from "react-bootstrap";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import {useHistory} from 'react-router-dom';
+import React, { useEffect, useState } from "react";
 
-function Login () {
+function Login (props) {
+    const history = useHistory();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    let onLoginSubmitted = () => {
+        history.push('/');
+        props.onLoggedIn(email)
+    }
+
+    let onEmailChange = (event) => {
+        setEmail(event.target.value)
+    }
     return (
-        <Form>
+        <Row><Col>
+        <Form onSubmit={onLoginSubmitted}>
             <Form.Group controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Control type="email" placeholder="Enter email" onChange={onEmailChange} />
                 <br></br>
                 <Form.Text className="text-muted">
                     We'll never share your email with anyone else.
@@ -19,6 +36,7 @@ function Login () {
                 Submit
                 </Button>
         </Form>
+        </Col></Row>
     );
 }
 

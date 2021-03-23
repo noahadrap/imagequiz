@@ -1,16 +1,22 @@
 import {Card, CardDeck} from "react-bootstrap";
-
+import {
+  Link
+} from "react-router-dom";
 function Home () {
     return (
     
       <div>
+        
         <CardDeck style={{display: 'flex', flexDirection: 'row'}}>
+        <Link to='quiz1'>
         <Card style={{ width: '18rem', flex: 1 }}>
         <Card.Img variant="top" src="https://habahram.blob.core.windows.net/flowers/acacia.jpg" />
         <Card.Body>
           <Card.Title>Acacia</Card.Title>
         </Card.Body>
-      </Card>
+        </Card>
+        </Link>
+      
       
         <Card style={{ width: '10rem', flex: 1 }}>
         <Card.Img variant="top" src="https://habahram.blob.core.windows.net/flowers/alyssum.jpg" />
