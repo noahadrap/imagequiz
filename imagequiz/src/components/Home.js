@@ -8,7 +8,7 @@ function Home () {
       <div>
         
         <CardDeck style={{display: 'flex', flexDirection: 'row'}}>
-        <Link to='quiz1'>
+        <Link to='./quiz1'>
         <Card style={{ width: '18rem', flex: 1 }}>
         <Card.Img variant="top" src="https://habahram.blob.core.windows.net/flowers/acacia.jpg" />
         <Card.Body>
@@ -17,92 +17,108 @@ function Home () {
         </Card>
         </Link>
       
-      
+        <Link to='./quiz2'>
         <Card style={{ width: '10rem', flex: 1 }}>
         <Card.Img variant="top" src="https://habahram.blob.core.windows.net/flowers/alyssum.jpg" />
         <Card.Body>
           <Card.Title>Alyssum</Card.Title>
         </Card.Body>
       </Card>
+      </Link>
 
+      <Link to='./quiz3'>
       <Card style={{ width: '10rem', flex: 1 }}>
         <Card.Img variant="top" src="https://habahram.blob.core.windows.net/flowers/amaryllis.jpg" />
         <Card.Body>
           <Card.Title>Amaryllis</Card.Title>
         </Card.Body>
         </Card>
+        </Link>
         </CardDeck>
 
         <CardDeck style={{display: 'flex', flexDirection: 'row'}}>
-
+        <Link to='./quiz4'>
         <Card style={{ width: '10rem', flex: 1 }}>
         <Card.Img variant="top" src="https://habahram.blob.core.windows.net/flowers/aster.jpg" />
         <Card.Body>
           <Card.Title>Aster</Card.Title>
-        </Card.Body>
+      </Card.Body>
       </Card>
-
+      </Link>
+      <Link to='./quiz5'>
       <Card style={{ width: '10rem', flex: 1 }}>
         <Card.Img variant="top" src="https://habahram.blob.core.windows.net/flowers/azalea.jpg" />
         <Card.Body>
           <Card.Title>Azalea</Card.Title>
         </Card.Body>
       </Card>
-
+      </Link>
+      <Link to='./quiz6'>
       <Card style={{ width: '10rem', flex: 1 }}>
         <Card.Img variant="top" src="https://habahram.blob.core.windows.net/flowers/begonia.jpg" />
         <Card.Body>
           <Card.Title>Begonia</Card.Title>
         </Card.Body>
       </Card>
+      </Link>
       </CardDeck>
 
       <CardDeck style={{display: 'flex', flexDirection: 'row'}}>
-
+      <Link to='./quiz7'>
         <Card style={{ width: '10rem', flex: 1 }}>
         <Card.Img variant="top" src="https://habahram.blob.core.windows.net/flowers/buttercup.jpg" />
         <Card.Body>
           <Card.Title>Buttercup</Card.Title>
         </Card.Body>
       </Card>
+      </Link>
 
+      <Link to='./quiz8'>
       <Card style={{ width: '10rem', flex: 1 }}>
         <Card.Img variant="top" src="https://habahram.blob.core.windows.net/flowers/calluna.jpg" />
         <Card.Body>
           <Card.Title>Calluna</Card.Title>
         </Card.Body>
       </Card>
+      </Link>
 
+      <Link to='./quiz9'>
       <Card style={{ width: '10rem', flex: 1 }}>
         <Card.Img variant="top" src="https://habahram.blob.core.windows.net/flowers/camellia.jpg" />
         <Card.Body>
-          <Card.Title>Begonia</Card.Title>
+          <Card.Title>Camellia</Card.Title>
         </Card.Body>
       </Card>
+      </Link>
       </CardDeck>
-
+     
+      
       <CardDeck style={{display: 'flex', flexDirection: 'row'}}>
-
+      <Link to='./quiz10'>
         <Card style={{ width: '10rem', flex: 1 }}>
         <Card.Img variant="top" src="https://habahram.blob.core.windows.net/flowers/cardinal.jpg" />
         <Card.Body>
           <Card.Title>Cardinal</Card.Title>
         </Card.Body>
       </Card>
-
+      </Link>
+      
+      <Link to='./quiz11'>
       <Card style={{ width: '10rem', flex: 1 }}>
         <Card.Img variant="top" src="https://habahram.blob.core.windows.net/flowers/carnation.jpg" />
         <Card.Body>
           <Card.Title>Carnation</Card.Title>
         </Card.Body>
       </Card>
-
+      </Link>
+      <Link to='./quiz12'>
       <Card style={{ width: '10rem', flex: 1 }}>
         <Card.Img variant="top" src="https://habahram.blob.core.windows.net/flowers/clover.jpg" />
         <Card.Body>
           <Card.Title>Clover</Card.Title>
         </Card.Body>
       </Card>
+      </Link>
       </CardDeck>
 
       <CardDeck style={{display: 'flex', flexDirection: 'row'}}>

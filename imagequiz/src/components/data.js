@@ -1,3 +1,7 @@
+import React, {Component} from "react";
+import ReactDOM from "react-dom";
+
+
 let flowers = [
     {
         name: "Acacia",
@@ -110,3 +114,4 @@ let flowers = [
 ];
 
 export default flowers;
+

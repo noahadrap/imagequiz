@@ -2,7 +2,7 @@
 
 function Header () {
     return (
-        <h2>Practicum 5</h2>
+        <h2>Practicum 6</h2>
     );
 }
 

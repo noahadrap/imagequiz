@@ -8,7 +8,7 @@ import React, { useEffect, useState } from "react";
 function NavigationBar (props) {
     return (
         <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">Hello!</Navbar.Brand>
+        <Navbar.Brand href="#home">Welcome to the Image Quiz!</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
