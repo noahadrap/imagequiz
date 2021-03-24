@@ -2,6 +2,7 @@ import {Form, Button} from "react-bootstrap";
 import {useHistory} from 'react-router-dom';
 import React, { useEffect, useState } from "react";
 function Quiz12(props) {
+    const history = useHistory();
     const quiz12 = [
         {
             questionText: 'What Flower is this?',
@@ -80,8 +81,8 @@ function Quiz12(props) {
 				<div className='score-section'>
 					You scored {score} out of  {quiz12.length} 
                     
-                    <div><a href="#" onClick={refreshPage}>Take Quiz Again</a></div>
-                    <div><a href="/" >Go to the Home Page</a></div>
+                    <div><a onClick={refreshPage}>Take Quiz Again</a></div>
+                    <div><a onClick={() => {history.push('/')}}>Go to Home Page </a></div>
 				</div>
 			) : (
 				<>

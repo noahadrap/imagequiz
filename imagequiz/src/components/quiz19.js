@@ -1,49 +1,49 @@
 import {Form, Button} from "react-bootstrap";
 import {useHistory} from 'react-router-dom';
 import React, { useEffect, useState } from "react";
-function Quiz10(props) {
+function Quiz19(props) {
     const history = useHistory();
-    const quiz10 = [
+    const quiz19 = [
         {
             questionText: 'What Flower is this?',
             answerOptions: [
-                { answerText: 'Lily', isCorrect: false },
-                { answerText: 'Daisy', isCorrect: false },
-                { answerText: 'Cardinal', isCorrect: true },
+                { answerText: 'Lily', isCorrect: true },
+                { answerText: 'Lantana', isCorrect: false },
+                { answerText: 'Dahlia', isCorrect: false },
                 
             ],
         },
         {
             questionText: 'How long do these live for?',
             answerOptions: [
-                { answerText: '10 years', isCorrect: false },
-                { answerText: '3-4 years', isCorrect: true },
-                { answerText: '20 years', isCorrect: false },
+                { answerText: '1 month', isCorrect: false },
+                { answerText: '4 months', isCorrect: false },
+                { answerText: '2 weeks', isCorrect: true },
             ],
         },
         {
             questionText: "When do these bloom?",
             answerOptions: [
-                { answerText: 'Summer', isCorrect: true },
                 { answerText: 'Spring', isCorrect: false },
+                { answerText: 'Summer', isCorrect: true },
                 { answerText: 'Fall', isCorrect: false },
             ],
         },
         {
             questionText: 'Where is this found?',
             answerOptions: [
-                { answerText: 'Africa', isCorrect: false },
-                { answerText: 'Europe', isCorrect: false },
-                { answerText: 'North America', isCorrect: true },
+                { answerText: 'Northern Hemisphere', isCorrect: true },
+                { answerText: 'North America', isCorrect: false },
+                { answerText: 'Asia', isCorrect: false },
             ],
         },
         {
             questionText: 'What does this flower symbolize?',
             answerOptions: [
                 
-                { answerText: 'Hate', isCorrect: false },
+                { answerText: 'Love', isCorrect: false },
                 { answerText: 'Strength', isCorrect: false },
-                { answerText: 'Love', isCorrect: true },
+                { answerText: 'Purity', isCorrect: true },
             ],
         },
         {
@@ -66,7 +66,7 @@ function Quiz10(props) {
 		}
 
 		const nextQuestion = currentQuestion + 1;
-		if (nextQuestion < quiz10.length) {
+		if (nextQuestion < quiz19.length) {
 			setCurrentQuestion(nextQuestion);
 		} else {
 			setShowScore(true);
@@ -79,7 +79,7 @@ function Quiz10(props) {
 		<div className='quiz'>
 			{showScore ? (
 				<div className='score-section'>
-					You scored {score} out of  {quiz10.length} 
+					You scored {score} out of  {quiz19.length} 
                     
                     <div><a onClick={refreshPage}>Take Quiz Again</a></div>
                     <div><a onClick={() => {history.push('/')}}>Go to Home Page </a></div>
@@ -88,13 +88,13 @@ function Quiz10(props) {
 				<>
 					<div className='question-section'>
 						<div className='question-count'>
-							<span>Question {currentQuestion + 1}</span>/{quiz10.length}
+							<span>Question {currentQuestion + 1}</span>/{quiz19.length}
 						</div>
-						<div className='question-text'>{quiz10[currentQuestion].questionText}</div>
-                        <img src="https://habahram.blob.core.windows.net/flowers/cardinal.jpg"/>
+						<div className='question-text'>{quiz19[currentQuestion].questionText}</div>
+                        <img src="https://habahram.blob.core.windows.net/flowers/lily.jpg"/>
 					</div>
 					<div className='answer-section'>
-						{quiz10[currentQuestion].answerOptions.map((answerOption) => (
+						{quiz19[currentQuestion].answerOptions.map((answerOption) => (
 							<button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
 						))}
 					</div>
@@ -105,4 +105,4 @@ function Quiz10(props) {
 }
 
 
-export default Quiz10;
+export default Quiz19;
