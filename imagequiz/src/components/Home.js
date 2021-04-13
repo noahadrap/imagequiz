@@ -2,7 +2,9 @@ import {Card, CardDeck} from "react-bootstrap";
 import {
   Link
 } from "react-router-dom";
+import api from "../communication/api"
 function Home () {
+  const [quizzes, setQuizzes] = useState([]);
     return (
     
       <div>
