@@ -36,8 +36,8 @@ const express = require('express')
 const app = express();
 const port = process.env.PORT || 4002;
 
-app.get('/test', (request, resonse) => {
-    response.send("hello");
+app.get('/quizzes', (request, resonse) => {
+    response.send(quizzes);
 });
 
 app.listen(port, () => console.log("listening on port " + port))
