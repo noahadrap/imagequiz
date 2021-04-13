@@ -113,5 +113,59 @@ let flowers = [
     }
 ];
 
+const quiz1 = [
+    {
+        questionText: 'What Flower is this?',
+        answerOptions: [
+            { answerText: 'Lily', isCorrect: false },
+            { answerText: 'Daisy', isCorrect: false },
+            { answerText: 'Acaia', isCorrect: true },
+            
+        ],
+    },
+    {
+        questionText: 'How Long Do Acaia Trees live?',
+        answerOptions: [
+            { answerText: '10-20 years', isCorrect: false },
+            { answerText: '20-30 years', isCorrect: true },
+            { answerText: '30-40 years', isCorrect: false },
+        ],
+    },
+    {
+        questionText: 'What animals feed off this?',
+        answerOptions: [
+            { answerText: 'Both of these', isCorrect: true },
+            { answerText: 'Elephants', isCorrect: false },
+            { answerText: 'Giraffes', isCorrect: false },
+        ],
+    },
+    {
+        questionText: 'Where do these trees grow?',
+        answerOptions: [
+            { answerText: 'Austrailia', isCorrect: false },
+            { answerText: 'South Africa', isCorrect: false },
+            { answerText: 'both of these', isCorrect: true },
+        ],
+    },
+    {
+        questionText: 'What protection do these trees have for herbivores?',
+        answerOptions: [
+            
+            { answerText: 'Termites', isCorrect: false },
+            { answerText: 'Poisonous leaves', isCorrect: false },
+            { answerText: 'Thorns', isCorrect: true },
+        ],
+    },
+    {
+        questionText: 'What color do these leaves have when blooming?',
+        answerOptions: [
+            { answerText: 'Red', isCorrect: false },
+            { answerText: 'Green', isCorrect: false },
+            { answerText: 'Yellow', isCorrect: true },
+        ],
+    },
+
+];
+
 export default flowers;
 
