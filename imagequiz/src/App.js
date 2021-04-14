@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import './App.css';
 import { Container } from 'react-bootstrap';
 import React, { useEffect, useState } from "react";
-import Quiz1 from './components/quiz1';
+import Quiz from './components/quiz1';
 import Quiz2 from './components/quiz2';
 import Quiz3 from './components/quiz3';
 import Quiz4 from './components/quiz4';
@@ -54,7 +54,7 @@ function App() {
         <Route path="/login">
         <Login onLoggedIn= {onLoggedIn} />
         </Route>
-        <Route path="/quiz1" component={Quiz1}/>
+        <Route path="/quiz" component={Quiz}/>
         <Route path="/quiz2" component={Quiz2}/>
         <Route path="/quiz3" component={Quiz3}/>
         <Route path="/quiz4" component={Quiz4}/>
