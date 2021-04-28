@@ -57,7 +57,7 @@ function Quiz (props) {
 							<span>Question {currentQuestion + 1}</span>/{quiz.length}
 						</div>
 						<div className='question-text'>{quiz[currentQuestion].questionText}</div>
-                        <img src={quiz[currentQuestion].image.picture}/>
+                        <img src={quiz[currentQuestion].image}/>
 					</div>
 					<div className='answer-section'>
 						{quiz[currentQuestion].answerOptions.map((answerOption) => (
